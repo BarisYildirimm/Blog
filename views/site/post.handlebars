@@ -1,27 +1,16 @@
 {{>site-nav}}
 <div class="container">
-    <div class="content">
+    <div class="section">
         <header>
-            <h2>HTML</h2>
+            <h1>{{post.title}}</h1>
         </header>
-        <div class="content-items">
-            {{#each posts}}
-            <div class="item">
-                <div class="item-img" style="background: url(img/css.jpg); background-size: 100% 100%"></div>
-                <div class="item-right">
-                    <h3>
-                        <a href="blog-single.html" class="item-title">{{title}}</a>
-                    </h3>
-                    <span>@{{author}}</span>
-                    <span>1 yıl önce</span>
-                    <span style="float: right; margin-right: 15px">387</span>
-                    <div class="item-description">
-                        {{description}}
-                    </div>
-                    <a href="/posts/{{_id}}" class="item-button">Devamını Oku </a>
-                </div>
-            </div>
-            {{/each}}
+
+        <div class="author">
+            <div class="author-picture" style="background: url(img/Baris.jpg); background-size: 100% 100%"></div>
+            <h1>{{post.author}} Haziran 15,2021</h1>
+        </div>
+        <div class="article">
+            {{post.description}}
         </div>
     </div>
     <aside>
@@ -180,5 +169,27 @@
             </div>
         </div>
     </aside>
+</div>
+
+<div class="comments">
+    <div class="comment-area">
+        <form action="post">
+            <label>Yorum</label><br />
+            <textarea name="comment" id="" cols="30" rows="10"></textarea>
+            <br />
+            <label>Kullanıcı adı</label><br />
+            <input type="text" />
+            <br />
+            <label>Email</label><br />
+            <input type="text" />
+            <br />
+            <input type="checkbox" /><label>Beni sonraki yorumlar için e-posta ile bilgilendir.</label>
+            <br />
+            <input type="checkbox" /><label>Beni yeni yazılarda e-posta ile bilgilendir.</label>
+            <br />
+            <input type="submit" value="Yorum Gönder" />
+            <br /><br /><br />
+        </form>
+    </div>
 </div>
 {{>site-footer}}

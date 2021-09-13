@@ -9,6 +9,16 @@ router.get("/new", (req, res) => {
   });
 });
 
+router.get("/:id", (req, res) => {
+  post.findById(req.params.id).then((post) => {
+    res.render("site/post", {
+      post: post,
+      title: "Post",
+      style: "../css/post.css",
+    });
+  });
+});
+
 router.post("/add", (req, res) => {
   post.create(req.body);
   res.redirect("/");
