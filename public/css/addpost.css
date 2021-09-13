@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Architects Daughter", cursive;
+}
+body {
+  background-color: #262626;
+}
+nav {
+  width: 100%;
+  height: auto;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+  box-shadow: 2px 0 8px 2px gray;
+  display: flex;
+  justify-content: space-between;
+  background-color: #262626;
+}
+nav .nav-logo {
+  width: 150px;
+  height: 50px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  background-color: #262626;
+  margin-left: 25px;
+}
+nav .login {
+  height: 50px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .login a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  font-size: 15px;
+  width: 100px;
+  height: 50px;
+  padding: 5px;
+  line-height: 39px;
+  text-align: center;
+  border-left: 1px solid silver;
+}
+nav .login a:hover {
+  background-color: #0e0d0d;
+  color: rgb(235, 145, 12);
+}
+nav ul {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  width: 100px;
+  height: 50px;
+  margin: auto 10px;
+}
+nav li a {
+  display: block;
+  line-height: 39px;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+}
+nav li a:hover {
+  background-color: #0e0d0d;
+  color: rgb(235, 145, 12);
+}
+.page-wrap {
+  width: 70%;
+  height: auto;
+  margin: 40px auto;
+}
+.page-wrap .maincontent {
+  width: auto;
+  height: auto;
+}
+.page-wrap header {
+  margin-bottom: 40px;
+}
+.page-wrap header h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+}
+.article-content {
+  width: auto;
+  height: auto;
+  background-color: white;
+  padding: 25px;
+  box-shadow: 2px 0 8px 2px gray;
+  border-radius: 10px;
+}
+.article-content form {
+  width: 60%;
+  height: auto;
+  margin: auto auto;
+}
+.article-content form input[type="text"] {
+  margin: 15px;
+  width: 100%;
+  height: 55px;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #d4d4d4;
+  background: #eaeaea;
+}
+.article-content form textarea {
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding: 10px;
+  margin-left: 15px;
+  font-size: 18px;
+  height: 45vh;
+  width: 100%;
+  display: block;
+}
+.article-content form button {
+  width: 165px;
+  height: 55px;
+  cursor: pointer;
+  background-color: #5e5e5e;
+  border-radius: 5px;
+  color: white;
+  font-weight: normal;
+  font-size: 16px;
+  border: 1px solid #d4d4d4;
+  margin-top: 10px;
+}
+.article-content form button:hover {
+  background: #858484;
+}
+
+footer {
+  margin-top: 5%;
+  width: 100%;
+  height: 30vh;
+  background-color: #111111;
+}
+footer .footer-contact {
+  border-top: 1px solid silver;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+footer .footer-contact .button-box {
+  width: auto;
+  height: auto;
+  margin: 60px auto 0;
+  text-align: center;
+}
+footer .footer-contact .button-box .button {
+  display: inline-block;
+  margin: 10px;
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  text-decoration: none;
+  line-height: 30px;
+  color: white;
+  border-radius: 5px;
+}
+footer .footer-contact .button-box .button:hover {
+  box-shadow: 2px 0 8px 2px gray;
+  transition: 0.5;
+}
+.footer-button-divider {
+  width: 80%;
+  height: 0.1px;
+  background-color: silver;
+  margin: 25px auto 0;
+}
+.footer-logo {
+  margin: 15px auto 0;
+  width: 70px;
+  height: 70px;
+
+  border-radius: 20px;
+}
+.footer-contact h3 {
+  text-align: center;
+  color: white;
+  margin-top: 15px;
+}

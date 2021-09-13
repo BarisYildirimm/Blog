@@ -1,0 +1,499 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Architects Daughter", cursive;
+}
+body {
+  background-color: #262626;
+}
+.side-menu {
+  width: 100%;
+  height: 50px;
+  background-color: #262626;
+  border-bottom: 1px solid silver;
+  display: none;
+}
+.side-menu a {
+  position: absolute;
+  right: 0%;
+  width: 100px;
+  height: 50px;
+  justify-content: center;
+  text-align: center;
+  line-height: 45px;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  border-left: 1px solid silver;
+}
+.side-menu a:hover {
+  background-color: rgb(235, 145, 12);
+}
+nav {
+  width: 100%;
+  height: auto;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+  box-shadow: 2px 0 8px 2px gray;
+  display: flex;
+  justify-content: space-between;
+  background-color: #262626;
+}
+nav .nav-logo {
+  width: 150px;
+  height: 50px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  background-color: #262626;
+  margin-left: 25px;
+}
+nav .login {
+  height: 50px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .login a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  font-size: 15px;
+  width: 100px;
+  height: 50px;
+  padding: 5px;
+  line-height: 39px;
+  text-align: center;
+  border-left: 1px solid silver;
+}
+nav .login a:hover {
+  background-color: #0e0d0d;
+  color: rgb(235, 145, 12);
+}
+nav ul {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  width: 100px;
+  height: 50px;
+  margin: auto 10px;
+}
+nav li a {
+  display: block;
+  line-height: 39px;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+}
+nav li a:hover {
+  background-color: #0e0d0d;
+  color: rgb(235, 145, 12);
+}
+nav .exit {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.section {
+  margin: auto 5%;
+  width: 60%;
+  height: auto;
+}
+header {
+  margin-top: 5%;
+  height: auto;
+  position: relative;
+}
+header h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 60px;
+}
+.author {
+  width: 100%;
+  height: 60px;
+  margin-top: 3%;
+  padding: 10px;
+  display: flex;
+}
+.author .author-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+}
+.author h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: 15px;
+  line-height: 30px;
+}
+.article {
+  margin-top: 25px;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  box-shadow: 2px 0 8px 2px gray;
+  border-radius: 20px;
+  padding: 25px;
+}
+.article p {
+  padding: 30px;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+.article h2 {
+  margin-left: 30px;
+}
+aside {
+  width: 20%;
+  height: auto;
+  margin-right: 5%;
+  height: auto;
+  overflow: hidden;
+}
+aside .card:first-of-type {
+  min-height: 40vh;
+}
+aside .card {
+  width: 100%;
+  background-color: white;
+  height: auto;
+  margin-top: 15%;
+  box-shadow: 2px 0 8px 2px gray;
+  border-radius: 20px;
+}
+aside .card:first-of-type h1 {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid silver;
+}
+aside .card:first-of-type form {
+  padding: 0 40px;
+}
+aside .card:first-of-type form .txt-field {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+aside .card:first-of-type .txt-field input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+aside .card:first-of-type .txt-field label {
+  position: absolute;
+  top: 25%;
+  left: 50px;
+  color: #adadad;
+  transform: translate(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+aside .card:first-of-type .txt-field span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0%;
+  width: 0%;
+  height: 2px;
+  background: rgb(235, 145, 12);
+  transition: 0.5s;
+}
+aside .card:first-of-type .txt-field input:focus ~ label,
+aside .card:first-of-type .txt-field input:valid ~ label {
+  top: -12px;
+  color: rgb(235, 145, 12);
+}
+aside .card:first-of-type .txt-field input:focus ~ span,
+aside .card:first-of-type .txt-field input:valid ~ span::before {
+  width: 100%;
+}
+aside .card:first-of-type .pass {
+  margin: -5px 0 20px 5px;
+  color: #a6a6a6;
+  cursor: pointer;
+}
+aside .card:first-of-type .pass:hover {
+  text-decoration: underline;
+}
+aside .card:first-of-type input[type="Submit"] {
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  background: rgb(235, 145, 12);
+  border-radius: 25px;
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+aside .card:first-of-type input[type="Submit"]:hover {
+  border-color: rgb(235, 145, 12);
+  transition: 0.5s;
+}
+aside .card:first-of-type .signup-link {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+}
+aside .card:first-of-type .signup-link a {
+  color: rgb(235, 145, 12);
+  text-decoration: none;
+}
+aside .card:first-of-type .signup-link a:hover {
+  text-decoration: underline;
+}
+.card-header {
+  width: auto;
+  height: 50px;
+  margin: 10px 10px;
+  padding: 10px;
+  border-bottom: 1px solid silver;
+}
+.card .item {
+  width: 100%;
+  height: auto;
+  padding: 8px;
+  margin: 5px auto;
+  display: flex;
+  border-bottom: 1px solid silver;
+}
+.card .item:last-of-type {
+  border: none;
+}
+.card .item .box {
+  margin-left: 10px;
+  width: 100%;
+  height: auto;
+  line-height: 28px;
+}
+.card .item h4 {
+  color: rgb(235, 145, 12);
+  cursor: pointer;
+}
+.card .item a {
+  text-decoration: none;
+  color: rgb(235, 145, 12);
+}
+.card .item .item-img {
+  width: 80px;
+  height: 45px;
+  margin: 5px;
+}
+.card .item .description {
+  height: auto;
+  width: 100%;
+}
+.card .item .extra {
+  width: 100%;
+  height: auto;
+  color: silver;
+  font-size: 15px;
+}
+.comments {
+  margin: 10% 0 5% 5%;
+  width: 85%;
+  height: auto;
+  background-color: #111111;
+  border-radius: 20px;
+}
+.comments .comment-area {
+  width: 50%;
+  height: auto;
+  margin: 10px auto;
+}
+.comments .comment-area label {
+  color: white;
+  font-size: 18px;
+}
+.comments .comment-area form {
+  height: auto;
+  width: 80%;
+  margin: 10px auto;
+  padding: 25px;
+}
+.comments .comment-area input[type="text"] {
+  width: 75%;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.comments .comment-area input[type="submit"] {
+  width: 150px;
+  height: 50px;
+  margin: 20px 20px 0 0;
+  float: right;
+  padding: 3px;
+  cursor: pointer;
+  background-color: #5e5e5e;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  font-weight: bold;
+}
+.comments .comment-area input[type="submit"]:hover {
+  box-shadow: 2px 0 8px 2px gray;
+}
+.comments .comment-area input[type="checkbox"] {
+  margin-right: 10px;
+}
+.comments .comment-area form textarea {
+  width: 75%;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+footer {
+  margin-top: 5%;
+  width: 100%;
+  height: 30vh;
+  background-color: #111111;
+}
+footer .footer-contact {
+  border-top: 1px solid silver;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+footer .footer-contact .button-box {
+  width: auto;
+  height: auto;
+  margin: 60px auto 0;
+  text-align: center;
+}
+footer .footer-contact .button-box .button {
+  display: inline-block;
+  margin: 10px;
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  text-decoration: none;
+  line-height: 30px;
+  color: white;
+  border-radius: 5px;
+}
+footer .footer-contact .button-box .button:hover {
+  box-shadow: 2px 0 8px 2px gray;
+  transition: 0.5;
+}
+.footer-button-divider {
+  width: 80%;
+  height: 0.1px;
+  background-color: silver;
+  margin: 25px auto 0;
+}
+.footer-logo {
+  margin: 15px auto 0;
+  width: 70px;
+  height: 70px;
+
+  border-radius: 20px;
+}
+.footer-contact h3 {
+  text-align: center;
+  color: white;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 1150px) {
+  .container {
+    display: block;
+    margin-top: 5%;
+  }
+  .section {
+    margin: auto auto;
+    width: 80%;
+  }
+  .side-menu {
+    display: block;
+  }
+  nav {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    flex-direction: column;
+    justify-content: flex-start;
+    opacity: 0.8;
+    display: none;
+  }
+  nav ul {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  nav ul li {
+    width: 100%;
+  }
+  nav ul li a:hover {
+    background-color: rgb(235, 145, 12);
+    color: white;
+  }
+  nav .login {
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+  }
+  nav .exit {
+    display: block;
+  }
+  header h1 {
+    font-size: 35px;
+  }
+  aside {
+    margin: auto auto;
+    width: 80%;
+  }
+  aside .card {
+    padding: 25px;
+  }
+  .article p {
+    font-size: 18px;
+  }
+  .comments {
+    margin: auto;
+    width: 80%;
+    margin-top: 5%;
+    padding: 25px;
+  }
+  .comments .comment-area {
+    width: auto;
+  }
+  .comments .comment-area form {
+    margin: auto auto;
+    width: 100%;
+  }
+  .comments .comment-area form textarea {
+    width: 100%;
+  }
+  .comments .comment-area input[type="text"] {
+    width: 100%;
+  }
+}

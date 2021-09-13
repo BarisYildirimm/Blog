@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog-single</title>
+    <link rel="stylesheet" href="./css/blog-single.css" />
+  </head>
+  <body>
+    <div class="side-menu">
+      <a href="#" onclick="OpenSlideMenu()"><i class="fas fa-bars"></i></a>
+    </div>
+
+    <nav>
+      <div class="nav-logo">LOGO</div>
+      <ul>
+        <li class="exit"><a href="#" onclick="CloseSlideMenu()">X</a></li>
+        <li><a href="home.html">Ana Sayfa</a></li>
+        <li><a href="blog.html">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">Javascript</a></li>
+        <li><a href="#">C#</a></li>
+        <li><a href="#">Hakkımda</a></li>
+        <li><a href="contact.html">İletişim</a></li>
+      </ul>
+      <div class="login">
+        <a href="register.html">Kayıt Ol</a>
+        <a href="login.html">Giriş Yap</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="section">
+        <header>
+          <h1>Design Patterns(Tasarım Kalıpları)</h1>
+        </header>
+
+        <div class="author">
+          <div
+            class="author-picture"
+            style="background: url(img/Baris.jpg); background-size: 100% 100%"
+          ></div>
+          <h1>Barış Yıldırım Haziran 15,2021</h1>
+        </div>
+        <div class="article">
+          <p>
+            Hepimiz yaşantımızda bir konuda problemlerle karşılaşmış ve buna
+            kendimizce çözümler üretmişizdir. Bazen bu çözümler önceki
+            çözümlerimize o kadar tanıdık gelmeye başlar ki, bu durum artık
+            kendini tekrar etmeye başlar. Belli süre sonra artık geçmiş
+            hatalarımızdan dersler alırız ve bir sonraki adımda aynı problemle
+            karşılaşmamak için yapılması gerekeni biliriz.
+          </p>
+          <br />
+          <p>
+            Yazılım sektörünün gelişiminde de bu durum söz konusu. Biz
+            yazılımcılar aslında farklı projeler geliştiriyor olsakta benzer
+            problemlere çözüm ararız, benzer sorunlarla karşılaşırız. Bu
+            sorunlara da hepimiz kendimizce çözümler üretiriz. Peki bu çözümleri
+            bir araya getirsek ve bunlara bir isim versek? İşte Design
+            Patterns(Tasarım Kalıpları) buna çözüm sunuyor.
+          </p>
+          <br />
+          <p>
+            Bilgisayar bilimlerinin geçmişi çok önceye dayansada yazılım
+            mühendisliğinin gelişim süreci bundan yaklaşık 20–25 sene öncesine
+            dayanmakta. Design Patterns kavramı da yaklaşık 25 sene öncesinde
+            ortaya atılmış. Gang of Four (GOF) olarak bilinen Erich Gamma,
+            Richard Helm, Ralph Johnson and John Vlissides, Design Patterns —
+            Elements of Reusable Object-Oriented Software adında kitap
+            yayınlamışlar ve ilk kez yazılım alanında tasarım kalıpları
+            kavramını ortaya atmışlar. Bu terimi “Tasarım Kalıpları”, “Tasarım
+            Şablonları”, “Tasarım Örüntüleri” gibi farklı isimlerle
+            görebilirsiniz. Buradaki pattern sözcüğü için birebir çeviri yapmak
+            biraz zor. Ancak biz isimlendirmeden ziyade konuya odaklanalım.
+          </p>
+          <br />
+          <h2>Nedir?</h2>
+          <p>
+            Tasarım kalıpları, yazılım geliştiricilerin yazılım geliştirme
+            sırasında karşılaştıkları genel sorunların çözümüdür. Bu çözümler,
+            uzun bir süre boyunca sayısız yazılım geliştirici tarafından deneme
+            yanılma yoluyla elde edilmiştir. Daha sonra belli problemler için
+            buldukları optimum çözümlere isimler vermişlerdir. GOF, kitaplarında
+            da 23 adet Design Patterns’i konu almıştır. Ancak günümüzde bundan
+            çok daha fazlası vardır. Ayrıca bu konuyu belli bir kalıba oturtmak
+            doğru olmaz. Siz de projenizi geliştirirken kendi tasarım kalıbınızı
+            oluşturabilir ve kendi çözümünüzü bulabilirsiniz. Ancak tasarım
+            kalıplarının amacı tekerleği baştan icat etmemek olduğu için, var
+            olan çözümleri bilip uygun olan yerde kullanmak sizin için en
+            doğrusu olacaktır. Probleme göre uygun tasarım kalıbını uygulamakta
+            size kalmakta.
+          </p>
+          <br />
+          <h2>Ne değildir?</h2>
+          <p>
+            Tasarım kalıpları bir algoritma ya da kod değildir. Ayrıca belli
+            dile özgü değildir, dilden bağımsızdır. Genellikle nesneler arası
+            ilişkileri UML diyagramları ile gösteririz, bu sayede yazılımcılar
+            arasında ortak bir iletişim dili oluşmuş olur. Belli bir tasarımı
+            istediğiniz dille yazdığınız bir projeye kolaylıyla
+            uygulayabilirsiniz. Tabi burada bir yanlış anlaşılmayı gidermekte
+            fayda var. Neredeyse tüm Türkçe kaynaklarda tasarım kalıplarını
+            OOP(Nesne Tabanlı Programlama) ile sınırlandırmışlar. Ancak Tasarım
+            Kalıpları, dilden ve programlama paradigmalarından bağımsızdır. Yani
+            farklı bir paradigma için de çözümler üretilebilir. Günümüzde en
+            yaygın ve projelerde en çok kullanılan paradigma OOP olduğu için
+            tasarım kalıpları diyince direk OOP çözümleri akla gelmekte.
+          </p>
+          <br />
+          <h2>Tasarım Kalıpları Çeşitleri</h2>
+          <p>
+            Yazılım tasarım kalıpları genel olarak 3 ana başlıkta incelenir.
+            Bunlar şunlardır:
+          </p>
+          <p>
+            1- Creational Patterns (Yaratımsal Kalıplar): Bu tasarım deseni
+            nesneleri doğrudan new operatörü kullanarak oluşturmak yerine nesne
+            oluşturma mantığını gizleyerek sınıflardan nesne oluşturmaya
+            alternatif çözümler sunar. Bu program akışında hangi nesneye ihtiyaç
+            varsa onu oluşturmada esneklik ve kolaylık sağlar.
+          </p>
+          <p>
+            2- Structural Patterns (Yapısal Kalıplar): Bu tasarım deseni
+            nesneler arasındaki ilişkinin yapısını düzenlemek için çözümler
+            sunar.
+          </p>
+          <p>
+            3- Behavioral Patterns (Davranışsal Kalıplar): Bu tasarım deseni
+            çalışma zamanında nesneler arasındaki davranışlar için çözümler
+            sunar.
+          </p>
+          <br />
+          <p>
+            Anti Pattern Nedir? Bu kadar yazıp buna değinmeden olmazdı. Anti
+            Pattern, bir problemi çözmek için kullanılan kötü çözümler için
+            kullanılan bir kavramdır. Yani tasarım kalıplarının tam zıttıdır
+            diyebiliriz. Probleminizde bir anti pattern kullanmak ileride ciddi
+            sorunlara yol açabilir. Ayrıca o problem için anti pattern olarak
+            sayılan bir tasarım başka bir problem için uygun bir çözüm olabilir
+            bunu unutmamak gerek.
+          </p>
+        </div>
+      </div>
+      <aside>
+        <div class="card">
+          <h1>Giriş Yap</h1>
+          <form method="POST">
+            <div class="txt-field">
+              <input type="text" required />
+              <span></span>
+              <label>Kullanıcı Adı</label>
+            </div>
+            <div class="txt-field">
+              <input type="password" required />
+              <span></span>
+              <label>Şifre Giriniz</label>
+            </div>
+            <div class="pass">Şifremi Unuttum?</div>
+            <input type="submit" value="Giriş Yap" />
+            <div class="signup-link">
+              Hesabınız Yok Mu? <a href="#">Kayıt Ol</a>
+            </div>
+          </form>
+        </div>
+        <div class="card">
+          <div class="card-header"><h1>Son Eklenenler</h1></div>
+          <div class="item">
+            <div
+              class="item-img"
+              style="background: url(img/html.jpg); background-size: 100% 100%"
+            ></div>
+            <div class="box">
+              <h4><a href="#">HTML Video Ekleme ve Otomatik Oynatma</a></h4>
+              <div class="description">
+                <p>
+                  HTML5’in piyasaya sürülmesiyle, video etiketi çok rahat bir
+                  şekilde eklemek... <a href="#">Yaziya git</a>
+                </p>
+              </div>
+              <div class="extra">698 görüntülenme</div>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="item-img"
+              style="background: url(img/css.jpg); background-size: 100% 100%"
+            ></div>
+            <div class="box">
+              <h4><a href="#">CSS ile Checkbox’ lara Stil Verme </a></h4>
+              <div class="description">
+                <p>
+                  HTML ile oluşturulmuş formlar ve form elemanlarının göze hitap
+                  etmesi için CSS ile ufak dokunuşlar yapabiliriz...
+                  <a href="#">Yaziya git</a>
+                </p>
+              </div>
+              <div class="extra">702 görüntülenme</div>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="item-img"
+              style="
+                background: url(img/csharp.jpg);
+                background-size: 100% 100%;
+              "
+            ></div>
+            <div class="box">
+              <h4>
+                <a href="#"
+                  >C# Ortalama ve Devamsızlık Durumuna Göre Geçti Kaldı
+                  Örneği</a
+                >
+              </h4>
+              <div class="description">
+                <p>
+                  Bu örnekte Windows Form’ da kullanıcıdan 1. yazılı, 2. yazılı
+                  ve devamsızlık bilgisi istenerek, ortalama hesaplayan...<a
+                    href="#"
+                    >Yaziya git</a
+                  >
+                </p>
+              </div>
+              <div class="extra">1040 görüntülenme</div>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="item-img"
+              style="background: url(img/cpp.jpg); background-size: 100% 100%"
+            ></div>
+            <div class="box">
+              <h4>
+                <a href="#">C++ ile 1-500 Arası Mükemmel Sayıları Listeleme</a>
+              </h4>
+              <div class="description">
+                <p>
+                  Kendisi hariç bütün pozitif bölenlerinin toplamı kendisine
+                  eşit olan sayılara mükemmel sayı denir. 6 bir mükemmel
+                  sayıdır...<a href="#">Yaziya git</a>
+                </p>
+              </div>
+              <div class="extra">394 görüntülenme</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header"><h1>Popüler</h1></div>
+          <div class="item">
+            <div
+              class="item-img"
+              style="background: url(img/html.jpg); background-size: 100% 100%"
+            ></div>
+            <div class="box">
+              <h4><a href="#">HTML Video Ekleme ve Otomatik Oynatma</a></h4>
+              <div class="description">
+                <p>
+                  HTML5’in piyasaya sürülmesiyle, video etiketi çok rahat bir
+                  şekilde eklemek... <a href="#">Yaziya git</a>
+                </p>
+              </div>
+              <div class="extra">698 görüntülenme</div>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="item-img"
+              style="background: url(img/css.jpg); background-size: 100% 100%"
+            ></div>
+            <div class="box">
+              <h4><a href="#">CSS ile Checkbox’ lara Stil Verme </a></h4>
+              <div class="description">
+                <p>
+                  HTML ile oluşturulmuş formlar ve form elemanlarının göze hitap
+                  etmesi için CSS ile ufak dokunuşlar yapabiliriz...
+                  <a href="#">Yaziya git</a>
+                </p>
+              </div>
+              <div class="extra">702 görüntülenme</div>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="item-img"
+              style="
+                background: url(img/csharp.jpg);
+                background-size: 100% 100%;
+              "
+            ></div>
+            <div class="box">
+              <h4>
+                <a href="#"
+                  >C# Ortalama ve Devamsızlık Durumuna Göre Geçti Kaldı
+                  Örneği</a
+                >
+              </h4>
+              <div class="description">
+                <p>
+                  Bu örnekte Windows Form’ da kullanıcıdan 1. yazılı, 2. yazılı
+                  ve devamsızlık bilgisi istenerek, ortalama hesaplayan...<a
+                    href="#"
+                    >Yaziya git</a
+                  >
+                </p>
+              </div>
+              <div class="extra">1040 görüntülenme</div>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="item-img"
+              style="background: url(img/cpp.jpg); background-size: 100% 100%"
+            ></div>
+            <div class="box">
+              <h4>
+                <a href="#">C++ ile 1-500 Arası Mükemmel Sayıları Listeleme</a>
+              </h4>
+              <div class="description">
+                <p>
+                  Kendisi hariç bütün pozitif bölenlerinin toplamı kendisine
+                  eşit olan sayılara mükemmel sayı denir. 6 bir mükemmel
+                  sayıdır...<a href="#">Yaziya git</a>
+                </p>
+              </div>
+              <div class="extra">394 görüntülenme</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="comments">
+      <div class="comment-area">
+        <form action="post">
+          <label>Yorum</label><br />
+          <textarea name="comment" id="" cols="30" rows="10"></textarea>
+          <br />
+          <label>Kullanıcı adı</label><br />
+          <input type="text" />
+          <br />
+          <label>Email</label><br />
+          <input type="text" />
+          <br />
+          <input type="checkbox" /><label
+            >Beni sonraki yorumlar için e-posta ile bilgilendir.</label
+          >
+          <br />
+          <input type="checkbox" /><label
+            >Beni yeni yazılarda e-posta ile bilgilendir.</label
+          >
+          <br />
+          <input type="submit" value="Yorum Gönder" />
+          <br /><br /><br />
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-contact">
+        <div class="button-box">
+          <a
+            href="https://github.com/BarisYildirimm"
+            class="button"
+            style="background-color: #767676"
+            >Github</a
+          >
+          <a
+            href="https://www.instagram.com/barisyildirim__"
+            class="button"
+            style="background-color: #49769c"
+            >Instagram</a
+          >
+          <a
+            href="https://www.linkedin.com/in/barış-yıldırım-501334213"
+            class="button"
+            style="background-color: #55acee"
+            >LinkedIn</a
+          >
+        </div>
+        <div class="footer-button-divider"></div>
+        <div
+          class="footer-logo"
+          style="background: url(img/Baris.jpg); background-size: 100% 100%"
+        ></div>
+        <h3>Barış'ın bloğu</h3>
+      </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
