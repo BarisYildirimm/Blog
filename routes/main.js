@@ -1,4 +1,5 @@
 const express = require("express");
+const post = require("../models/post");
 const router = express.Router();
 
 router.get("/", (req, res) => {
@@ -9,9 +10,12 @@ router.get("/", (req, res) => {
 });
 
 router.get("/blog", (req, res) => {
-  res.render("site/blog", {
-    title: "Blog",
-    style: "./css/blog.css",
+  post.find({}).then((posts) => {
+    res.render("site/blog", {
+      title: "Blog",
+      style: "./css/blog.css",
+      posts: posts,
+    });
   });
 });
 

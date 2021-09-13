@@ -5,10 +5,10 @@
             <h1 class="page-title">Add Post</h1>
         </header>
         <div class="article-content">
-            <form>
-                <input type="text" placeholder="Post Title*" />
-                <textarea id="message" cols="60" rows="10" placeholder="Post Content*"></textarea>
-                <input type="text" placeholder="Author*" />
+            <form method="POST" action="/posts/add">
+                <input name="title" type="text" placeholder="Post Title*" />
+                <textarea name="description" id="message" cols="60" rows="10" placeholder="Post Content*"></textarea>
+                <input name="author" type="text" placeholder="Author*" />
                 <button type="submit" style="margin-left: 44%">Add Post</button>
             </form>
         </div>

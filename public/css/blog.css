@@ -112,8 +112,8 @@ header {
   text-decoration: none;
 }
 .item-img {
-  width: 300px;
-  height: auto;
+  width: 250px;
+  height: 175px;
   background-color: coral;
   border-radius: 10px;
 }
@@ -124,6 +124,8 @@ header {
 }
 .item-description {
   margin-top: 10px;
+  max-height: 120px;
+  overflow: hidden;
 }
 .item-title {
   color: rgb(235, 145, 12);

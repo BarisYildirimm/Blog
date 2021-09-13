@@ -5,226 +5,23 @@
             <h2>HTML</h2>
         </header>
         <div class="content-items">
+            {{#each posts}}
             <div class="item">
                 <div class="item-img" style="background: url(img/css.jpg); background-size: 100% 100%"></div>
                 <div class="item-right">
                     <h3>
-                        <a href="blog-single.html" class="item-title">HTML Video Ekleme ve Otomatik Oynatma</a>
+                        <a href="blog-single.html" class="item-title">{{title}}</a>
                     </h3>
-                    <span>@Barış Yıldırım</span>
+                    <span>@{{author}}</span>
                     <span>1 yıl önce</span>
                     <span style="float: right; margin-right: 15px">387</span>
                     <div class="item-description">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui
-                        velit ratione eaque nobis, animi voluptatum neque, ducimus
-                        culpa, eum alias quo nulla fuga illum voluptatibus totam.
-                        Praesentium
+                        {{description}}
                     </div>
                     <a href="blog-single.html" class="item-button">Devamını Oku </a>
                 </div>
             </div>
-            <div class="item">
-                <div class="item-img" style="
-                background: url(img/csharp.jpg);
-                background-size: 100% 100%;
-              "></div>
-                <div class="item-right">
-                    <h3>
-                        <a href="blog-single.html" class="item-title">CSS ile Checkbox’ lara Stil Verme</a>
-                    </h3>
-                    <span>@Barış Yıldırım</span>
-                    <span>1 yıl önce</span>
-                    <span style="float: right; margin-right: 15px">327</span>
-                    <div class="item-description">
-                        HTML ile oluşturulmuş formlar ve form elemanlarının göze hitap
-                        etmesi için CSS ile ufak dokunuşlar yapabiliriz...
-                    </div>
-                    <a href="blog-single.html" class="item-button">Devamını Oku </a>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-img" style="background: url(img/cpp.jpg); background-size: 100% 100%"></div>
-                <div class="item-right">
-                    <h3>
-                        <a href="blog-single.html" class="item-title">C# Ortalama ve Devamsızlık Durumuna Göre Geçti
-                            Kaldı
-                            Örneği</a>
-                    </h3>
-                    <span>@Barış Yıldırım</span>
-                    <span>1 yıl önce</span>
-                    <span style="float: right; margin-right: 15px">245</span>
-                    <div class="item-description">
-                        Bu örnekte Windows Form’ da kullanıcıdan 1. yazılı, 2. yazılı ve
-                        devamsızlık bilgisi istenerek, ortalama hesaplayan..
-                    </div>
-                    <a href="blog-single.html" class="item-button">Devamını Oku </a>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-img" style="background: url(img/css.jpg); background-size: 100% 100%"></div>
-                <div class="item-right">
-                    <h3>
-                        <a href="blog-single.html" class="item-title">HTML Video Ekleme ve Otomatik Oynatma</a>
-                    </h3>
-                    <span>@Barış Yıldırım</span>
-                    <span>1 yıl önce</span>
-                    <span style="float: right; margin-right: 15px">387</span>
-                    <div class="item-description">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui
-                        velit ratione eaque nobis, animi voluptatum neque, ducimus
-                        culpa, eum alias quo nulla fuga illum voluptatibus totam.
-                        Praesentium
-                    </div>
-                    <a href="blog-single.html" class="item-button">Devamını Oku </a>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-img" style="
-                background: url(img/csharp.jpg);
-                background-size: 100% 100%;
-              "></div>
-                <div class="item-right">
-                    <h3>
-                        <a href="blog-single.html" class="item-title">CSS ile Checkbox’ lara Stil Verme</a>
-                    </h3>
-                    <span>@Barış Yıldırım</span>
-                    <span>1 yıl önce</span>
-                    <span style="float: right; margin-right: 15px">327</span>
-                    <div class="item-description">
-                        HTML ile oluşturulmuş formlar ve form elemanlarının göze hitap
-                        etmesi için CSS ile ufak dokunuşlar yapabiliriz...
-                    </div>
-                    <a href="blog-single.html" class="item-button">Devamını Oku </a>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-img" style="background: url(img/cpp.jpg); background-size: 100% 100%"></div>
-                <div class="item-right">
-                    <h3>
-                        <a href="blog-single.html" class="item-title">C# Ortalama ve Devamsızlık Durumuna Göre Geçti
-                            Kaldı
-                            Örneği</a>
-                    </h3>
-                    <span>@Barış Yıldırım</span>
-                    <span>1 yıl önce</span>
-                    <span style="float: right; margin-right: 15px">245</span>
-                    <div class="item-description">
-                        Bu örnekte Windows Form’ da kullanıcıdan 1. yazılı, 2. yazılı ve
-                        devamsızlık bilgisi istenerek, ortalama hesaplayan..
-                    </div>
-                    <a href="blog-single.html" class="item-button">Devamını Oku </a>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-img" style="background: url(img/css.jpg); background-size: 100% 100%"></div>
-                <div class="item-right">
-                    <h3>
-                        <a href="blog-single.html" class="item-title">HTML Video Ekleme ve Otomatik Oynatma</a>
-                    </h3>
-                    <span>@Barış Yıldırım</span>
-                    <span>1 yıl önce</span>
-                    <span style="float: right; margin-right: 15px">387</span>
-                    <div class="item-description">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui
-                        velit ratione eaque nobis, animi voluptatum neque, ducimus
-                        culpa, eum alias quo nulla fuga illum voluptatibus totam.
-                        Praesentium
-                    </div>
-                    <a href="blog-single.html" class="item-button">Devamını Oku </a>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-img" style="
-                background: url(img/csharp.jpg);
-                background-size: 100% 100%;
-              "></div>
-                <div class="item-right">
-                    <h3>
-                        <a href="blog-single.html" class="item-title">CSS ile Checkbox’ lara Stil Verme</a>
-                    </h3>
-                    <span>@Barış Yıldırım</span>
-                    <span>1 yıl önce</span>
-                    <span style="float: right; margin-right: 15px">327</span>
-                    <div class="item-description">
-                        HTML ile oluşturulmuş formlar ve form elemanlarının göze hitap
-                        etmesi için CSS ile ufak dokunuşlar yapabiliriz...
-                    </div>
-                    <a href="blog-single.html" class="item-button">Devamını Oku </a>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-img" style="background: url(img/cpp.jpg); background-size: 100% 100%"></div>
-                <div class="item-right">
-                    <h3>
-                        <a href="blog-single.html" class="item-title">C# Ortalama ve Devamsızlık Durumuna Göre Geçti
-                            Kaldı
-                            Örneği</a>
-                    </h3>
-                    <span>@Barış Yıldırım</span>
-                    <span>1 yıl önce</span>
-                    <span style="float: right; margin-right: 15px">245</span>
-                    <div class="item-description">
-                        Bu örnekte Windows Form’ da kullanıcıdan 1. yazılı, 2. yazılı ve
-                        devamsızlık bilgisi istenerek, ortalama hesaplayan..
-                    </div>
-                    <a href="blog-single.html" class="item-button">Devamını Oku </a>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-img" style="background: url(img/css.jpg); background-size: 100% 100%"></div>
-                <div class="item-right">
-                    <h3>
-                        <a href="blog-single.html" class="item-title">HTML Video Ekleme ve Otomatik Oynatma</a>
-                    </h3>
-                    <span>@Barış Yıldırım</span>
-                    <span>1 yıl önce</span>
-                    <span style="float: right; margin-right: 15px">387</span>
-                    <div class="item-description">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui
-                        velit ratione eaque nobis, animi voluptatum neque, ducimus
-                        culpa, eum alias quo nulla fuga illum voluptatibus totam.
-                        Praesentium
-                    </div>
-                    <a href="blog-single.html" class="item-button">Devamını Oku </a>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-img" style="
-                background: url(img/csharp.jpg);
-                background-size: 100% 100%;
-              "></div>
-                <div class="item-right">
-                    <h3>
-                        <a href="blog-single.html" class="item-title">CSS ile Checkbox’ lara Stil Verme</a>
-                    </h3>
-                    <span>@Barış Yıldırım</span>
-                    <span>1 yıl önce</span>
-                    <span style="float: right; margin-right: 15px">327</span>
-                    <div class="item-description">
-                        HTML ile oluşturulmuş formlar ve form elemanlarının göze hitap
-                        etmesi için CSS ile ufak dokunuşlar yapabiliriz...
-                    </div>
-                    <a href="blog-single.html" class="item-button">Devamını Oku </a>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-img" style="background: url(img/cpp.jpg); background-size: 100% 100%"></div>
-                <div class="item-right">
-                    <h3>
-                        <a href="blog-single.html" class="item-title">C# Ortalama ve Devamsızlık Durumuna Göre Geçti
-                            Kaldı
-                            Örneği</a>
-                    </h3>
-                    <span>@Barış Yıldırım</span>
-                    <span>1 yıl önce</span>
-                    <span style="float: right; margin-right: 15px">245</span>
-                    <div class="item-description">
-                        Bu örnekte Windows Form’ da kullanıcıdan 1. yazılı, 2. yazılı ve
-                        devamsızlık bilgisi istenerek, ortalama hesaplayan..
-                    </div>
-                    <a href="blog-single.html" class="item-button">Devamını Oku </a>
-                </div>
-            </div>
+            {{/each}}
         </div>
     </div>
     <aside>
