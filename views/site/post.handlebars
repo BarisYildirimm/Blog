@@ -10,7 +10,7 @@
             <h1>{{post.author}} Haziran 15,2021</h1>
         </div>
         <div class="article">
-            {{post.description}}
+            <p>{{post.description}}</p>
         </div>
     </div>
     <aside>
@@ -38,68 +38,21 @@
             <div class="card-header">
                 <h1>Son Eklenenler</h1>
             </div>
+            {{#each post}}
             <div class="item">
                 <div class="item-img" style="background: url(img/html.jpg); background-size: 100% 100%"></div>
                 <div class="box">
-                    <h4><a href="#">HTML Video Ekleme ve Otomatik Oynatma</a></h4>
+                    <h4><a href="#">{{title}}</a></h4>
                     <div class="description">
                         <p>
-                            HTML5’in piyasaya sürülmesiyle, video etiketi çok rahat bir
-                            şekilde eklemek... <a href="#">Yaziya git</a>
+                            {{description}}
                         </p>
+                        <a href="/posts/{{_id}}">Yaziya git</a>
                     </div>
                     <div class="extra">698 görüntülenme</div>
                 </div>
             </div>
-            <div class="item">
-                <div class="item-img" style="background: url(img/css.jpg); background-size: 100% 100%"></div>
-                <div class="box">
-                    <h4><a href="#">CSS ile Checkbox’ lara Stil Verme </a></h4>
-                    <div class="description">
-                        <p>
-                            HTML ile oluşturulmuş formlar ve form elemanlarının göze hitap
-                            etmesi için CSS ile ufak dokunuşlar yapabiliriz...
-                            <a href="#">Yaziya git</a>
-                        </p>
-                    </div>
-                    <div class="extra">702 görüntülenme</div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-img" style="
-                background: url(img/csharp.jpg);
-                background-size: 100% 100%;
-              "></div>
-                <div class="box">
-                    <h4>
-                        <a href="#">C# Ortalama ve Devamsızlık Durumuna Göre Geçti Kaldı
-                            Örneği</a>
-                    </h4>
-                    <div class="description">
-                        <p>
-                            Bu örnekte Windows Form’ da kullanıcıdan 1. yazılı, 2. yazılı
-                            ve devamsızlık bilgisi istenerek, ortalama hesaplayan...<a href="#">Yaziya git</a>
-                        </p>
-                    </div>
-                    <div class="extra">1040 görüntülenme</div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="item-img" style="background: url(img/cpp.jpg); background-size: 100% 100%"></div>
-                <div class="box">
-                    <h4>
-                        <a href="#">C++ ile 1-500 Arası Mükemmel Sayıları Listeleme</a>
-                    </h4>
-                    <div class="description">
-                        <p>
-                            Kendisi hariç bütün pozitif bölenlerinin toplamı kendisine
-                            eşit olan sayılara mükemmel sayı denir. 6 bir mükemmel
-                            sayıdır...<a href="#">Yaziya git</a>
-                        </p>
-                    </div>
-                    <div class="extra">394 görüntülenme</div>
-                </div>
-            </div>
+            {{/each}}
         </div>
         <div class="card">
             <div class="card-header">

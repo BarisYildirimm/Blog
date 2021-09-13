@@ -110,7 +110,7 @@ nav .exit {
   display: flex;
 }
 .section {
-  margin: auto 5%;
+  margin: 0% 5%;
   width: 60%;
   height: auto;
 }
@@ -157,7 +157,7 @@ header h1 {
   font-size: 22px;
   font-weight: 400;
   letter-spacing: 1px;
-  line-height: 25px;
+  line-height: 30px;
 }
 .article h2 {
   margin-left: 30px;
@@ -308,6 +308,11 @@ aside .card:first-of-type .signup-link a:hover {
 .card .item .description {
   height: auto;
   width: 100%;
+}
+.card .item .description p {
+  max-height: 115px;
+  width: 100%;
+  overflow: hidden;
 }
 .card .item .extra {
   width: 100%;

@@ -293,6 +293,11 @@ aside .card:first-of-type .signup-link a:hover {
   height: auto;
   width: 100%;
 }
+.card .item .description p {
+  max-height: 115px;
+  width: 100%;
+  overflow: hidden;
+}
 .card .item .extra {
   width: 100%;
   height: auto;
