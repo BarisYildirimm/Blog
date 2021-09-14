@@ -6,8 +6,8 @@
         </header>
 
         <div class="author">
-            <div class="author-picture" style="background: url(img/Baris.jpg); background-size: 100% 100%"></div>
-            <h1>{{post.author}} Haziran 15,2021</h1>
+            <div class="author-picture" style="background: url({{post.authorImage}}); background-size: 100% 100%"></div>
+            <h1>{{post.author}} {{generateDate post.date "MM/DD/YYYY"}}</h1>
         </div>
         <div class="article">
             <p>{{post.description}}</p>
@@ -40,7 +40,7 @@
             </div>
             {{#each post}}
             <div class="item">
-                <div class="item-img" style="background: url(img/html.jpg); background-size: 100% 100%"></div>
+                <div class="item-img" style="background: url({{postImage}}); background-size: 100% 100%"></div>
                 <div class="box">
                     <h4><a href="#">{{title}}</a></h4>
                     <div class="description">

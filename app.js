@@ -2,6 +2,8 @@ const express = require("express");
 const Handlebars = require("handlebars");
 const exphbs = require("express-handlebars");
 const bodyParser = require("body-parser");
+const fileUpload = require("express-fileUpload");
+const moment = require("moment");
 const mongoose = require("mongoose");
 
 const app = express();
@@ -14,6 +16,7 @@ const port = 5000;
 const hostname = "127.0.0.1";
 
 app.use(express.static("public"));
+app.use(fileUpload());
 
 app.engine(
   "handlebars",
@@ -22,6 +25,11 @@ app.engine(
     runtimeOptions: {
       allowProtoPropertiesByDefault: true,
       allowProtoMethodsByDefault: true,
+    },
+    helpers: {
+      generateDate: (date, format) => {
+        return moment(date).format(format);
+      },
     },
   })
 );

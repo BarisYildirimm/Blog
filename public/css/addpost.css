@@ -127,6 +127,30 @@ nav li a:hover {
   width: 100%;
   display: block;
 }
+.article-content .authorDesign {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+.article-content .authorDesign #authorImageFile {
+  padding: 25px;
+  height: auto;
+  font-size: 17px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.article-content .PostImageDesign {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+.article-content #postImageFile {
+  height: auto;
+  font-size: 17px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 15px;
+}
 .article-content form button {
   width: 165px;
   height: 55px;
@@ -137,7 +161,7 @@ nav li a:hover {
   font-weight: normal;
   font-size: 16px;
   border: 1px solid #d4d4d4;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 .article-content form button:hover {
   background: #858484;
