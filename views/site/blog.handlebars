@@ -10,7 +10,7 @@
                 <div class="item-img" style="background: url({{postImage}}); background-size: 100% 100%"></div>
                 <div class="item-right">
                     <h3>
-                        <a href="blog-single.html" class="item-title">{{title}}</a>
+                        <a href="/posts/{{_id}}" class="item-title">{{title}}</a>
                     </h3>
                     <span>@{{author}}</span>
                     <span>{{generateDate post.date "MM/DD/YYYY"}}</span>
@@ -54,7 +54,7 @@
             <div class="item">
                 <div class="item-img" style="background: url({{postImage}}); background-size: 100% 100%"></div>
                 <div class="box">
-                    <h4><a href="#">{{title}}</a></h4>
+                    <h4><a href="/posts/{{_id}}">{{title}}</a></h4>
                     <div class="description">
                         <p>
                             {{description}}

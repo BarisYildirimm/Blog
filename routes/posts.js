@@ -9,7 +9,6 @@ router.get("/new", (req, res) => {
     style: "../css/addpost.css",
   });
 });
-
 router.get("/:id", (req, res) => {
   post.findById(req.params.id).then((post) => {
     res.render("site/post", {

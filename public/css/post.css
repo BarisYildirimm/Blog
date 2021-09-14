@@ -110,8 +110,9 @@ nav .exit {
   display: flex;
 }
 .section {
-  margin: 0% 5%;
-  width: 60%;
+  margin-left: 6%;
+  margin-right: 2%;
+  width: 65%;
   height: auto;
 }
 header {
