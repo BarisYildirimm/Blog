@@ -160,7 +160,11 @@ header h1 {
   letter-spacing: 1px;
   line-height: 30px;
 }
-.article h1 {
+.article h1,
+h2,
+h3,
+h4,
+ul {
   margin-left: 30px;
 }
 aside {
