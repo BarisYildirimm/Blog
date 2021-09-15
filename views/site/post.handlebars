@@ -10,7 +10,7 @@
             <h1>{{post.author}} {{generateDate post.date "MM/DD/YYYY"}}</h1>
         </div>
         <div class="article">
-            <p>{{post.description}}</p>
+            {{{post.description}}}
         </div>
     </div>
     <aside>
@@ -42,13 +42,14 @@
             <div class="item">
                 <div class="item-img" style="background: url({{post.postImage}}); background-size: 100% 100%"></div>
                 <div class="box">
-                    <h4><a href="#">{{post.title}}</a></h4>
+                    <h4><a href="/posts/{{post._id}}">{{post.title}}</a></h4>
                     <div class="description">
-                        <p>
-                            {{post.description}}
-                        </p>
-                        <a href="/posts/{{post._id}}">Yaziya git</a>
+
+                        {{{post.description}}}
+
+
                     </div>
+                    <a href="/posts/{{post._id}}">Yaziya git</a>
                     <div class="extra">698 görüntülenme</div>
                 </div>
             </div>

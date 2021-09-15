@@ -2,7 +2,7 @@
 <div class="container">
     <div class="content">
         <header>
-            <h2>HTML</h2>
+            <h2>BLOG</h2>
         </header>
         <div class="content-items">
             {{#each posts}}
@@ -16,7 +16,7 @@
                     <span>{{generateDate post.date "MM/DD/YYYY"}}</span>
                     <span style="float: right; margin-right: 15px">387</span>
                     <div class="item-description">
-                        {{description}}
+                        {{{description}}}
                     </div>
                     <a href="/posts/{{_id}}" class="item-button">Devamını Oku </a>
                 </div>
@@ -56,11 +56,12 @@
                 <div class="box">
                     <h4><a href="/posts/{{_id}}">{{title}}</a></h4>
                     <div class="description">
-                        <p>
-                            {{description}}
-                        </p>
-                        <a href="/posts/{{_id}}">Yaziya git</a>
+
+                        {{{description}}}
+
+
                     </div>
+                    <a href="/posts/{{_id}}">Yaziya git</a>
                     <div class="extra">698 görüntülenme</div>
                 </div>
             </div>

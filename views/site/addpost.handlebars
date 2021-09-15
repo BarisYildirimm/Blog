@@ -7,7 +7,7 @@
         <div class="article-content">
             <form method="POST" action="/posts/add" enctype="multipart/form-data">
                 <input name="title" type="text" placeholder="Post Title*" />
-                <textarea name="description" id="message" cols="60" rows="10" placeholder="Post Content*"></textarea>
+                <textarea name="description" cols="60" rows="10" placeholder="Post Content*"></textarea>
                 <div class="PostImageDesign">
                     <label style="font-size: 17px;">Post Image:</label>
                     <input type="file" name="postImage" id="postImageFile">
@@ -22,3 +22,7 @@
     </div>
 </div>
 {{>site-footer}}
+<script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+<script>
+    CKEDITOR.replace('description');
+</script>

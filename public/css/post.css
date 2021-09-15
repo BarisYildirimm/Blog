@@ -154,13 +154,13 @@ header h1 {
   padding: 25px;
 }
 .article p {
-  padding: 30px;
+  padding: 5px 30px 30px 30px;
   font-size: 22px;
   font-weight: 400;
   letter-spacing: 1px;
   line-height: 30px;
 }
-.article h2 {
+.article h1 {
   margin-left: 30px;
 }
 aside {
@@ -307,10 +307,6 @@ aside .card:first-of-type .signup-link a:hover {
   margin: 5px;
 }
 .card .item .description {
-  height: auto;
-  width: 100%;
-}
-.card .item .description p {
   max-height: 115px;
   width: 100%;
   overflow: hidden;
