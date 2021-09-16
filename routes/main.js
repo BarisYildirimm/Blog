@@ -3,9 +3,12 @@ const post = require("../models/post");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.render("site/home", {
-    title: "Home Page",
-    style: "./css/home.css",
+  post.find({}).then((posts) => {
+    res.render("site/home", {
+      title: "Home Page",
+      style: "./css/home.css",
+      posts: posts,
+    });
   });
 });
 

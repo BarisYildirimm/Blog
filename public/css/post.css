@@ -293,7 +293,7 @@ aside .card:first-of-type .signup-link a:hover {
 }
 .card .item .box {
   margin-left: 10px;
-  width: 100%;
+  width: 70%;
   height: auto;
   line-height: 28px;
 }
@@ -306,8 +306,8 @@ aside .card:first-of-type .signup-link a:hover {
   color: rgb(235, 145, 12);
 }
 .card .item .item-img {
-  width: 80px;
-  height: 45px;
+  width: 100px;
+  height: 80px;
   margin: 5px;
 }
 .card .item .description {
