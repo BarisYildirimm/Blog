@@ -116,6 +116,7 @@ header {
   height: 175px;
   background-color: coral;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .item-right {

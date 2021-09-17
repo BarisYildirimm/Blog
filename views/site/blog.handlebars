@@ -7,7 +7,8 @@
         <div class="content-items">
             {{#each posts}}
             <div class="item">
-                <div class="item-img" style="background: url({{postImage}}); background-size: 100% 100%"></div>
+                <div class="item-img" style="background: url({{postImage}}); background-size: 100% 100%"
+                    onclick="location.href='/posts/{{_id}}';"></div>
                 <div class="item-right">
                     <h3>
                         <a href="/posts/{{_id}}" class="item-title">{{title}}</a>
