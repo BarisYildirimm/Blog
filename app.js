@@ -41,9 +41,11 @@ app.use(bodyParser.json());
 const main = require("./routes/main");
 const blog = require("./routes/admin/blog");
 const admin = require("./routes/admin");
+const users = require("./routes/users");
 app.use("/", main);
 app.use("/blog", blog);
 app.use("/admin", admin);
+app.use("/users", users);
 
 app.listen(port, hostname, () => {
   console.log(`app listening http://${hostname}:${port}`);

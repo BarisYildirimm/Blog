@@ -10,22 +10,7 @@
 </head>
 
 <body>
-    <nav>
-        <div class="nav-logo">LOGO</div>
-        <ul>
-            <li><a href="/">Ana Sayfa</a></li>
-            <li><a href="/blog">HTML</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">Javascript</a></li>
-            <li><a href="#">C#</a></li>
-            <li><a href="#">Hakkımda</a></li>
-            <li><a href="/contact">İletişim</a></li>
-        </ul>
-        <div class="login">
-            <a href="/register">Kayıt Ol</a>
-            <a href="/login">Giriş Yap</a>
-        </div>
-    </nav>
+    {{>site-nav}}
 
     <div class="page-wrap">
         <div class="maincontent">
@@ -33,21 +18,15 @@
                 <h1 class="page-title">Kayıt OL</h1>
             </header>
             <div class="article-content">
-                <form>
-                    <label for="#">Ad</label>
-                    <input type="text" placeholder="Ad(Name)" />
-                    <br />
-                    <label for="#">Soyad</label>
-                    <input type="text" placeholder="Soyad(Surname)" />
-                    <br />
+                <form action="/users/new" method="POST">
                     <label for="#">Kullanıcı Adı</label>
-                    <input type="text" placeholder="Kullanıcı adı(Username)" />
+                    <input type="text" name="username" placeholder="Kullanıcı adı(Username)" />
                     <br />
                     <label for="#">Email</label>
-                    <input type="text" placeholder="Email" />
+                    <input type="text" name="email" placeholder="Email" />
                     <br />
                     <label for="#">password</label>
-                    <input type="text" placeholder="Şifre(Password)" />
+                    <input type="text" name="password" placeholder="Şifre(Password)" />
                     <br />
                     <button type="submit">Kayıt Ol</button>
                 </form>

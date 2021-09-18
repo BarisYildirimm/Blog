@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const post = require("../../models/post");
+const users = require("../../models/users");
 
 router.get("/index", (req, res) => {
   post.find({}).then((posts) => {
@@ -7,6 +8,13 @@ router.get("/index", (req, res) => {
       style: "../../css/index.css",
       title: "Admin Home",
       posts: posts,
+    });
+  });
+  users.find({}).then((users) => {
+    res.render("admin/index", {
+      style: "../../css/index.css",
+      title: "Admin Home",
+      users: users,
     });
   });
 });

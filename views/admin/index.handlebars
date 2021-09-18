@@ -29,38 +29,26 @@
         </tbody>
     </table>
     <h1>Users</h1>
-    <table class="styled-table" style="display:inline-block;">
+    <table class="styled-table">
         <thead>
             <tr>
-                <td>Author</td>
-                <td>Title</td>
-                <td>Content</td>
-                <td>Update</td>
-                <td>Delete</td>
+                <td>User Name</td>
+                <td>E-Mail</td>
+                <td>Password</td>
+                <td>Create-Date</td>
             </tr>
         </thead>
         <tbody>
+            {{#each users}}
             <tr>
-                <td>Author</td>
-                <td>Title</td>
-                <td>Content</td>
+                <td>{{username}}</td>
+                <td>{{email}}</td>
+                <td>{{password}}</td>
+                <td>{{generateDate date "MM/DD/YYYY"}}</td>
                 <td class="del-upd">Update</td>
                 <td class="del-upd">Delete</td>
             </tr>
-            <tr>
-                <td>Author</td>
-                <td>Title</td>
-                <td>Content</td>
-                <td class="del-upd">Update</td>
-                <td class="del-upd">Delete</td>
-            </tr>
-            <tr>
-                <td>Author</td>
-                <td>Title</td>
-                <td>Content</td>
-                <td class="del-upd">Update</td>
-                <td class="del-upd">Delete</td>
-            </tr>
+            {{/each}}
         </tbody>
     </table>
     <h1>Category</h1>

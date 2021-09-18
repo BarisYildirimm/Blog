@@ -1,5 +1,6 @@
 const express = require("express");
 const post = require("../models/post");
+const users = require("../models/users");
 const router = express.Router();
 
 router.get("/", (req, res) => {
@@ -18,6 +19,13 @@ router.get("/admin/index", (req, res) => {
       style: "../css/index.css",
       title: "Admin Home",
       posts: posts,
+    });
+  });
+  users.find({}).then((users) => {
+    res.render("admin/index", {
+      style: "../css/index.css",
+      title: "Admin Home",
+      users: users,
     });
   });
 });
