@@ -8,10 +8,10 @@
             {{#each posts}}
             <div class="item">
                 <div class="item-img" style="background: url({{postImage}}); background-size: 100% 100%"
-                    onclick="location.href='/posts/{{_id}}';"></div>
+                    onclick="location.href='/blog/{{_id}}';"></div>
                 <div class="item-right">
                     <h3>
-                        <a href="/posts/{{_id}}" class="item-title">{{title}}</a>
+                        <a href="/blog/{{_id}}" class="item-title">{{title}}</a>
                     </h3>
                     <span>@{{author}}</span>
                     <span>{{generateDate post.date "MM/DD/YYYY"}}</span>
@@ -19,7 +19,7 @@
                     <div class="item-description">
                         {{{description}}}
                     </div>
-                    <a href="/posts/{{_id}}" class="item-button">Devamını Oku </a>
+                    <a href="/blog/{{_id}}" class="item-button">Devamını Oku </a>
                 </div>
             </div>
             {{/each}}
@@ -55,11 +55,11 @@
             <div class="item">
                 <div class="item-img" style="background: url({{postImage}}); background-size: 100% 100%"></div>
                 <div class="box">
-                    <h4><a href="/posts/{{_id}}">{{title}}</a></h4>
+                    <h4><a href="/blog/{{_id}}">{{title}}</a></h4>
                     <div class="description">
                         {{{description}}}
                     </div>
-                    <a href="/posts/{{_id}}">Yaziya git</a>
+                    <a href="/blog/{{_id}}">Yaziya git</a>
                     <div class="extra">698 görüntülenme</div>
                 </div>
             </div>

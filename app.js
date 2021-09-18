@@ -39,10 +39,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 const main = require("./routes/main");
-const posts = require("./routes/posts");
+const blog = require("./routes/admin/blog");
 const admin = require("./routes/admin");
 app.use("/", main);
-app.use("/posts", posts);
+app.use("/blog", blog);
 app.use("/admin", admin);
 
 app.listen(port, hostname, () => {

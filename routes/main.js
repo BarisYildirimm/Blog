@@ -11,6 +11,11 @@ router.get("/", (req, res) => {
     });
   });
 });
+router.get("/admin", (req, res) => {
+  res.render("admin/index", {
+    style: "./css/index.css",
+  });
+});
 
 router.get("/blog", (req, res) => {
   post.find({}).then((posts) => {

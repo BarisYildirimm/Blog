@@ -15,7 +15,7 @@ nav {
   z-index: 1;
   box-shadow: 2px 0 8px 2px gray;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   background-color: #262626;
 }
 nav .nav-logo {
@@ -29,29 +29,6 @@ nav .nav-logo {
   background-color: #262626;
   margin-left: 25px;
 }
-nav .login {
-  height: 50px;
-  width: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-nav .login a {
-  text-decoration: none;
-  display: block;
-  color: white;
-  font-size: 15px;
-  width: 100px;
-  height: 50px;
-  padding: 5px;
-  line-height: 39px;
-  text-align: center;
-  border-left: 1px solid silver;
-}
-nav .login a:hover {
-  background-color: #0e0d0d;
-  color: rgb(235, 145, 12);
-}
 nav ul {
   margin: 0%;
   padding: 0%;
@@ -61,7 +38,7 @@ nav ul {
   justify-content: center;
 }
 nav li {
-  width: 100px;
+  width: 125px;
   height: 50px;
   margin: auto 10px;
 }
