@@ -7,33 +7,25 @@
             <tr>
                 <td>Author</td>
                 <td>Title</td>
-                <td>Content</td>
+                <td>description</td>
                 <td>Update</td>
                 <td>Delete</td>
             </tr>
         </thead>
         <tbody>
+            {{#each posts}}
             <tr>
-                <td>Author</td>
-                <td>Title</td>
-                <td>Content</td>
+                <td>{{author}}</td>
+                <td>{{title}}</td>
+                <td style="width: 500px; height: 150px">
+                    <div style="overflow-y: scroll; width: 100%; height: 100%; border-bottom:1px solid gray">
+                        {{{description}}}
+                    </div>
+                </td>
                 <td class="del-upd">Update</td>
                 <td class="del-upd">Delete</td>
             </tr>
-            <tr>
-                <td>Author</td>
-                <td>Title</td>
-                <td>Content</td>
-                <td class="del-upd">Update</td>
-                <td class="del-upd">Delete</td>
-            </tr>
-            <tr>
-                <td>Author</td>
-                <td>Title</td>
-                <td>Content</td>
-                <td class="del-upd">Update</td>
-                <td class="del-upd">Delete</td>
-            </tr>
+            {{/each}}
         </tbody>
     </table>
     <h1>Users</h1>

@@ -99,6 +99,9 @@ nav li a:hover {
   width: 100%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   text-align: center;
+  display: block;
+  height: 500px;
+  overflow-y: scroll;
 }
 .del-upd {
   cursor: pointer;
@@ -116,6 +119,8 @@ nav li a:hover {
   padding: 12px 15px;
   font-weight: bolder;
   font-size: 18px;
+  position: sticky;
+  top: 0%;
 }
 .styled-table td {
   padding: 12px 15px;

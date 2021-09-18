@@ -29,7 +29,7 @@ router.post("/add", (req, res) => {
     postImage: `../../img/PostImage/${postImage.name}`,
     authorImage: `../../img/authorImage/${authorImage.name}`,
   });
-  res.redirect("/");
+  res.redirect("/admin/index");
 });
 
 module.exports = router;
