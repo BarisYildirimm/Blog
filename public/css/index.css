@@ -100,7 +100,7 @@ nav li a:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   text-align: center;
   display: block;
-  height: 100px;
+  height: 500px;
   overflow-y: scroll;
 }
 .del-upd {
@@ -122,6 +122,34 @@ nav li a:hover {
   top: 0%;
 }
 .styled-table td {
+  padding: 12px 15px;
+}
+.users-table {
+  height: 250px;
+  overflow-y: scroll;
+}
+.users-table table {
+  border-collapse: collapse;
+  margin: 0 0 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+.users-table thead tr {
+  background-color: rgb(235, 145, 12);
+  color: #ffffff;
+  text-align: center;
+}
+.users-table thead {
+  padding: 12px 15px;
+  font-weight: bolder;
+  font-size: 18px;
+  position: sticky;
+  top: 0%;
+}
+.users-table td {
   padding: 12px 15px;
 }
 

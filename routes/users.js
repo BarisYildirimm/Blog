@@ -9,6 +9,13 @@ router.get("/register", (req, res) => {
   });
 });
 
+router.get("/login", (req, res) => {
+  res.render("site/login", {
+    style: "../css/login.css",
+    title: "Login",
+  });
+});
+
 router.post("/new", (req, res) => {
   users.create(req.body, (err, users) => {
     if (!err) {

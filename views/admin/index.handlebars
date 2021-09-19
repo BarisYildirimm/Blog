@@ -29,30 +29,32 @@
         </tbody>
     </table>
     <h1>Users</h1>
-    <table class="styled-table">
-        <thead>
-            <tr>
-                <td>User Name</td>
-                <td>E-Mail</td>
-                <td>Password</td>
-                <td>Create-Date</td>
-                <td>Update</td>
-                <td>Delete</td>
-            </tr>
-        </thead>
-        <tbody>
-            {{#each users}}
-            <tr>
-                <td>{{username}}</td>
-                <td>{{email}}</td>
-                <td>{{password}}</td>
-                <td>{{generateDate date "MM/DD/YYYY"}}</td>
-                <td class="del-upd">Update</td>
-                <td class="del-upd">Delete</td>
-            </tr>
-            {{/each}}
-        </tbody>
-    </table>
+    <div class="users-table">
+        <table>
+            <thead>
+                <tr>
+                    <td>User Name</td>
+                    <td>E-Mail</td>
+                    <td>Password</td>
+                    <td>Create-Date</td>
+                    <td>Update</td>
+                    <td>Delete</td>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each users}}
+                <tr>
+                    <td>{{username}}</td>
+                    <td>{{email}}</td>
+                    <td>{{password}}</td>
+                    <td>{{generateDate date "MM/DD/YYYY"}}</td>
+                    <td class="del-upd">Update</td>
+                    <td class="del-upd">Delete</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
     <h1>Category</h1>
     <table class="styled-table">
         <thead>
