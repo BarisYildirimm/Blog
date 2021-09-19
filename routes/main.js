@@ -13,23 +13,6 @@ router.get("/", (req, res) => {
   });
 });
 
-router.get("/admin/index", (req, res) => {
-  post.find({}).then((posts) => {
-    res.render("admin/index", {
-      style: "../css/index.css",
-      title: "Admin Home",
-      posts: posts,
-    });
-  });
-  users.find({}).then((users) => {
-    res.render("admin/index", {
-      style: "../css/index.css",
-      title: "Admin Home",
-      users: users,
-    });
-  });
-});
-
 router.get("/blog", (req, res) => {
   post.find({}).then((posts) => {
     res.render("site/blog", {

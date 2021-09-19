@@ -100,7 +100,7 @@ nav li a:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   text-align: center;
   display: block;
-  height: 500px;
+  height: 100px;
   overflow-y: scroll;
 }
 .del-upd {
@@ -112,7 +112,6 @@ nav li a:hover {
 .styled-table thead tr {
   background-color: rgb(235, 145, 12);
   color: #ffffff;
-  text-align: left;
   text-align: center;
 }
 .styled-table thead {
