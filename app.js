@@ -12,7 +12,7 @@ mongoose.connect("mongodb://127.0.0.1/BlogSite", {
   useUnifiedTopology: true,
 });
 
-const port = 5000;
+const port = 5000 || process.env.port;
 const hostname = "127.0.0.1";
 
 app.use(express.static("public"));
